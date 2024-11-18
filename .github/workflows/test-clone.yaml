@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout konflux-ci/konflux-ci Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: 'konflux-ci/konflux-ci'
           path: konflux-ci
