@@ -1,0 +1,15 @@
+name: Run Task Tests
+
+"on":
+  pull_request
+
+jobs:
+  run-task-tests:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout konflux-ci/konflux-ci Repository
+        uses: actions/checkout@v3
+        with:
+          repository: 'konflux-ci/konflux-ci'
+          path: konflux-ci
+          ref: f6d9d0fe8f34199eb118febcbf7f7944ae7772a9
