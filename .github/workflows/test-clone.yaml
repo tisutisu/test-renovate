@@ -5,7 +5,7 @@ name: Run Task Tests
 
 jobs:
   run-task-tests:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout konflux-ci/konflux-ci Repository
         uses: actions/checkout@v3
