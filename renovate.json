@@ -2,5 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^.github/workflows/test-clone.yaml$"],
+      "matchStrings": ["ref: (?<currentValue>.*?)\\s"],
+      "depNameTemplate": "konflux-ci",
+      "packageNameTemplate": "https://github.com/konflux-ci/konflux-ci",
+      "datasourceTemplate": "git-refs"
+    }
   ]
 }
