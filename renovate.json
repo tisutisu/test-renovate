@@ -7,7 +7,7 @@
     {
       "customType": "regex",
       "fileMatch": ["^.github/workflows/test-clone.yaml$"],
-      "matchStrings": ["ref: (?<currentValue>.*?)\\s"],
+      "matchStrings": ["ref: (?<currentValue>.*?)\\n"],
       "currentValueTemplate": "main",
       "depNameTemplate": "konflux-ci",
       "packageNameTemplate": "https://github.com/konflux-ci/konflux-ci",
