@@ -12,4 +12,4 @@ jobs:
         with:
           repository: 'konflux-ci/konflux-ci'
           path: konflux-ci
-          ref: f6d9d0fe8f34199eb118febcbf7f7944ae7772a9
+          ref: b2a7270857d061be65129e31a518969100f82e67
