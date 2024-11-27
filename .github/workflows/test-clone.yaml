@@ -10,7 +10,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          ref: "${{ github.event.pull_request.head.sha }}"
+          ref: b2a7270857d061be65129e31a518969100f82e67
           path: test-renovate
 
       - name: Checkout konflux-ci/konflux-ci Repository
@@ -18,4 +18,4 @@ jobs:
         with:
           repository: 'konflux-ci/konflux-ci'
           path: konflux-ci
-          ref: c76fdc177672441a7b08b6152ac8ee23c68f05be
+          ref: b2a7270857d061be65129e31a518969100f82e67
