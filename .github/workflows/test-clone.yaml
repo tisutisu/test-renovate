@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: "${{ github.event.pull_request.head.sha }}"
           path: test-renovate
 
       - name: Checkout konflux-ci/konflux-ci Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: 'konflux-ci/konflux-ci'
           path: konflux-ci
